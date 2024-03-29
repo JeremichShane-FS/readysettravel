@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ReadySetTravel</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo"><a href="index.html" class="underline-hover">ReadySet<span class="logo-travel">Travel</span></a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link underline-hover" aria-label="About">About</a>
+        </li>
+        <li class="nav__item"><a href="destinations.html" class="nav__link underline-hover"
+            aria-label="Destinations">Destinations</a>
+        </li>
+        <li class="nav__item"><a href="tours.html" class="nav__link underline-hover" aria-label="Tours">Tours</a>
+        </li>
+        <li class="nav__item"><a href="blog.html" class="nav__link underline-hover" aria-label="Blog">Blog</a></li>
+        <li class="nav__item">
+          <button class="nav__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="nav">
+        <span class="nav__burger"></span>
+      </button>
+    </nav>
+    <nav class="mobile" id="mobile">
+      <ul class="mobile__list" id="mobile-list">
+        <li class="mobile__item"><a href="about.html" aria-label="About">About</a></li>
+        <li class="mobile__item"><a href="destinations.html" class="mobile__link"
+            aria-label="Destinations">Destinations</a></li>
+        <li class="mobile__item"><a href="tours.html" class="mobile__link" aria-label="Tours">Tours</a></li>
+        <li class="mobile__item"><a href="blog.html" class="mobile__link" aria-label="Blog">Blog</a></li>
+        <li class="mobile__item">
+          <button class="mobile__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home hero">
+      <div class="hero__text container">
+        <h1 class="hero__title">Book the trip of a lifetime</h1>
+        <p class="hero__description">Get the best advice and tips for your dream trip</p>
+      </div>
+    </section>
+
+    <section class="search-cta">
+      <h3 class="search-cta__subtitle">Where do you want to go?</h3>
+      <div class="search-cta__search-wrapper">
+        <input type="search" placeholder="Enter a destination" class="search-cta__search-input"
+          aria-label="Destination Search">
+        <button type="submit" class="search-cta__search-button" aria-label="Search">Search</button>
+      </div>
+    </section>
+
+    <section class="trending-tours">
+      <h2 class="trending-tours__title">Trending Tours</h2>
+      <p class="trending-tours__description">Get out there and experience some adventure!</p>
+      <ul class="trending-tours__list">
+        <li class="trending-tours__item">
+          <article class="trending-tours__card">
+            <figure class="card__figure">
+              <img src="img/home/tour-mountainHiking.jpg" alt="Image of Alps Mountain Hiking Tour" class="card__img">
+              <figcaption class="card__caption">
+                <div>
+                  <h3 class="card__tour-title">Alps Mountain Hiking Tour</h3>
+                  <p class="card__tour-info">4 Days | 10 Stops</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="card__footer-book">
+              <span class="card__price">$1,500</span>
+              <button class="card__button" aria-label="Book Now">Book Now</button>
+            </div>
+
+          </article>
+        </li>
+        <li class="trending-tours__item">
+          <article class="trending-tours__card">
+            <figure class="card__figure">
+              <img src="img/home/tour-snorkel.jpg" alt="Image of Snorkel the Barrier Reef Tour" class="card__img">
+              <figcaption class="card__caption">
+                <div>
+                  <h3 class="card__tour-title">Snorkel the Barrier Reef Tour</h3>
+                  <p class="card__tour-info">2 Days | 2 Stops</p>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="card__footer-book">
+              <span class="card__price">$1,000</span>
+              <button class="card__button" aria-label="Book Now">Book Now</button>
+            </div>
+          </article>
+        </li>
+        <li class="trending-tours__item">
+          <article class="trending-tours__card">
+            <figure class="card__figure">
+              <img src="img/home/tour-mountainHiking.jpg" alt="Image of Tour the Pyramids on Camelback"
+                class="card__img">
+              <figcaption class="card__caption">
+                <div>
+                  <h3 class="card__tour-title">Tour the Pyramids on Camelback</h3>
+                  <p class="card__tour-info">2 Days | 2 Stops</p>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="card__footer-book">
+              <span class="card__price">$2,000</span>
+              <button class="card__button" aria-label="Book Now">Book Now</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="perfect-trip">
+      <h1 class="perfect-trip__title">Plan the <span class="orange">Perfect Trip</span></h1>
+      <p class="perfect-trip__description">We take care of it all so you can get out there and experience some
+        adventure!</p>
+      <ul class="perfect-trip__list">
+        <li class="perfect-trip__item">
+          <img src="img/icons/icon-flights.png" alt="Flights" class="perfect-trip__icon">Flights
+        </li>
+        <li class="perfect-trip__item">
+          <img src="img/icons/icon-transport.png" alt="Transportation" class="perfect-trip__icon">Transportation
+        </li>
+        <li class="perfect-trip__item">
+          <img src="img/icons/icon-guide.png" alt="Guides" class="perfect-trip__icon">Guides
+        </li>
+      </ul>
+    </section>
+
+    <section class="top-destinations">
+      <h1 class="top-destinations__title">Top Notch Destinations</h1>
+      <p class="top-destinations__description">These places are on everyone's bucket list</p>
+      <div class="top-destinations__grid container">
+        <figure class="top-destinations__item item1">
+          <img src="img/home/top-destinations-machu.jpg" alt="Image Machu Picchu, Peru" class="top-destinations__image">
+          <figcaption class="top-destinations__caption">
+            <p class="top-destinations__place">Machu Picchu</p>
+            <p class="top-destinations__country">Peru</p>
+          </figcaption>
+        </figure>
+        <figure class="top-destinations__item item2">
+          <img src="img/home/top-destinations-rome.jpg" alt="Image of Rome, Italy" class="top-destinations__image">
+          <figcaption class="top-destinations__caption">
+            <p class="top-destinations__place">Rome</p>
+            <p class="top-destinations__country">Italy</p>
+          </figcaption>
+        </figure>
+        <figure class="top-destinations__item item3 ">
+          <img src="img/home/top-destinations-sydney.jpg" alt="Image of Sydney, Australia"
+            class="top-destinations__image">
+          <figcaption class="top-destinations__caption">
+            <p class="top-destinations__place">Sydney</p>
+            <p class="top-destinations__country">Australia</p>
+          </figcaption>
+        </figure>
+        <figure class="top-destinations__item item4">
+          <img src="img/home/top-destinations-paris.jpg" alt="Image of Paris, France" class="top-destinations__image">
+          <figcaption class="top-destinations__caption">
+            <p class="top-destinations__place">Paris</p>
+            <p class="top-destinations__country">France</p>
+          </figcaption>
+        </figure>
+        <figure class="top-destinations__item item5">
+          <img src="img/home/top-destinations-rio.jpg" alt="Image of Rio de Janeiro, Brazil"
+            class="top-destinations__image">
+          <figcaption class="top-destinations__caption">
+            <p class="top-destinations__place">Rio de Janeiro</p>
+            <p class="top-destinations__country">Brazil</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__social">
+        <div class="footer__social logo"><a href="index.html">ReadySet<span class="logo-travel">Travel</span></a>
+        </div>
+        <p class="footer__description">We can provide you with the best advice and tips for your dream trip.</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-facebook.png" alt="Facebook logo"
+                class="footer__social-icon" aria-label="Facebook"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-instagram.png" alt="Instagram logo"
+                class="footer__social-icon" aria-label="Instagram"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-twitter.png" alt="Twitter logo"
+                class="footer__social-icon" aria-label="Twitter"></a></li>
+
+        </ul>
+      </div>
+      <address class="footer__contact">
+        <p class="footer__contact-title">Contact Us</p>
+        <div class="footer__contact-container">
+          <p class="footer__contact__address">1234 Address Street</p>
+          <p class="footer__contact__city-state">City, State 12345</p>
+        </div>
+        <p class="footer__contact__phone">123-456-7890</p>
+      </address>
+      <nav class="footer__links">
+        <p class="footer__links-title">Links</p>
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a href="about.html" class="footer__link">About</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="destinations.html" class="footer__link">Destinations</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="tours.html" class="footer__link">Tours</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="blog.html" class="footer__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

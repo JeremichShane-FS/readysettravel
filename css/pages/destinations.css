@@ -1,0 +1,111 @@
+.destinations.hero {
+  background: url("../../img/destinations/destinations-hero.png");
+  color: var(--color-white);
+  position: relative;
+
+  .hero__text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 15rem;
+
+    @media screen and (max-width: 71.875em) {
+      bottom: 1.5rem;
+      left: 3rem;
+    }
+  }
+}
+
+.destinations__intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 5.5rem;
+
+  @media screen and (max-width: 56.25em) {
+    margin-top: 2rem;
+  }
+
+  .destinations__header {
+    text-align: center;
+
+    @media screen and (max-width: 56.25em) {
+      padding: unset;
+      width: 90%;
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 60.625rem) {
+    justify-content: center;
+    padding: unset;
+  }
+
+  @media screen and (max-width: 33.125em) {
+    padding: 0 2.5rem;
+  }
+}
+
+.categories {
+  .categories__header {
+    text-align: center;
+    margin: 3.37rem auto 0.5rem;
+
+    @media screen and (max-width: 56.25em) {
+      margin: 2rem 3rem 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .categories__list {
+    display: flex;
+    max-width: 50rem;
+    padding: 1.5rem 0 2.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.6875rem 1.5625rem;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    font-weight: var(--font-weight-bold);
+
+    @media screen and (max-width: 54.75em) {
+      padding-top: 1rem;
+      width: 80%;
+    }
+
+    .categories__item {
+      display: flex;
+      gap: 0.71rem;
+
+      & svg {
+        width: 2.5rem;
+        height: 1.5rem;
+        align-items: center;
+
+        @media screen and (max-width: 56.25em) {
+          width: 1rem;
+        }
+
+        .blog-intro__title {
+          width: 60%;
+
+          @media screen and (max-width: 60.9375em) {
+            width: 85%;
+            text-align: center;
+          }
+        }
+
+        .blog-intro__description {
+          width: 50%;
+          font-weight: var(--font-weight-light);
+          display: flex;
+
+          @media screen and (max-width: 60.9375em) {
+            width: 90%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

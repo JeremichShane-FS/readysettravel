@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ReadySetTravel</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo"><a href="index.html" class="underline-hover">ReadySet<span class="logo-travel">Travel</span></a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link underline-hover" aria-label="About">About</a>
+        </li>
+        <li class="nav__item"><a href="destinations.html" class="nav__link underline-hover"
+            aria-label="Destinations">Destinations</a>
+        </li>
+        <li class="nav__item"><a href="tours.html" class="nav__link underline-hover" aria-label="Tours">Tours</a>
+        </li>
+        <li class="nav__item"><a href="blog.html" class="nav__link underline-hover" aria-label="Blog">Blog</a></li>
+        <li class="nav__item">
+          <button class="nav__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="nav">
+        <span class="nav__burger"></span>
+      </button>
+    </nav>
+    <nav class="mobile" id="mobile">
+      <ul class="mobile__list" id="mobile-list">
+        <li class="mobile__item"><a href="about.html" aria-label="About">About</a></li>
+        <li class="mobile__item"><a href="destinations.html" class="mobile__link"
+            aria-label="Destinations">Destinations</a></li>
+        <li class="mobile__item"><a href="tours.html" class="mobile__link" aria-label="Tours">Tours</a></li>
+        <li class="mobile__item"><a href="blog.html" class="mobile__link" aria-label="Blog">Blog</a></li>
+        <li class="mobile__item">
+          <button class="mobile__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="tours hero">
+      <div class="hero__text container">
+        <h1 class="hero__title">Unleash Your Inner Explorer</h1>
+        <p class="hero__description">Plan a One-of-a-Kind Tour or Excursion That Will Leave You Speechless</p>
+      </div>
+    </section>
+
+    <section class="tours__intro container">
+      <h2 class="tours__header ">Embark on Extraordinary Journeys: <span class="orange">Elevate Your Travel</span>
+        Adventure with Exclusive
+        Tours by ReadySetTravel!</h2>
+      <div class="tours__description">
+        <p class="paragraph">
+          Booking unique tours is a great way to make the most out of your travel experience. These tours provide
+          opportunities to
+          explore new destinations, learn about local cultures, and engage in exciting activities not typically part of
+          traditional travel itineraries. From hot air balloon rides over Cappadocia to cooking classes in Florence,
+          unique tours
+          offer something for everyone. By booking these experiences through a reputable travel agency like
+          ReadySetTravel, you
+          can ensure your tour is safe, enjoyable, and tailored to your preferences. So why settle for a generic tour
+          when
+          you can
+          book something truly unique and unforgettable?
+        </p>
+      </div>
+    </section>
+
+    <section class="search-cta">
+      <h2 class="search-cta__subtitle">Where do you want to go?</h2>
+      <div class="search-cta__search-wrapper">
+        <input type="search" placeholder="Enter a destination" class="search-cta__search-input"
+          aria-label="Destination Search">
+        <button type="submit" class="search-cta__search-button" aria-label="Search">Search</button>
+      </div>
+    </section>
+
+    <div class="tours__cards container">
+      <ul class="card__list" id="tour-cards">
+        <!-- Tour Cards will be dynamically generated here -->
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__social">
+        <div class="footer__social logo"><a href="index.html">ReadySet<span class="logo-travel">Travel</span></a>
+        </div>
+        <p class="footer__description">We can provide you with the best advice and tips for your dream trip.</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-facebook.png" alt="Facebook logo"
+                class="footer__social-icon" aria-label="Facebook"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-instagram.png" alt="Instagram logo"
+                class="footer__social-icon" aria-label="Instagram"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-twitter.png" alt="Twitter logo"
+                class="footer__social-icon" aria-label="Twitter"></a></li>
+
+        </ul>
+      </div>
+      <address class="footer__contact">
+        <p class="footer__contact-title">Contact Us</p>
+        <div class="footer__contact-container">
+          <p class="footer__contact__address">1234 Address Street</p>
+          <p class="footer__contact__city-state">City, State 12345</p>
+        </div>
+        <p class="footer__contact__phone">123-456-7890</p>
+      </address>
+      <nav class="footer__links">
+        <p class="footer__links-title">Links</p>
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a href="about.html" class="footer__link">About</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="destinations.html" class="footer__link">Destinations</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="tours.html" class="footer__link">Tours</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="blog.html" class="footer__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script type="module" src="js/cards/tourCards.js"></script>
+</body>
+
+</html>

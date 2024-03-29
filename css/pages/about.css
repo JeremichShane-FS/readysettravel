@@ -1,0 +1,122 @@
+.about {
+  display: flex;
+  color: var(--color-white);
+  background: var(--color-primary);
+  position: relative;
+
+  .about.whitespace {
+    @media screen and (max-width: 60.625em) {
+      display: none;
+    }
+  }
+
+  .about__header-wrapper {
+    @media screen and (max-width: 60.625rem) {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+  }
+
+  .about__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 16.875rem;
+    width: 50%;
+    padding: 0 3.1875rem;
+
+    @media screen and (max-width: 60.625em) {
+      height: 15rem;
+    }
+
+    .about__description {
+      font-size: 1.375rem;
+    }
+  }
+
+  .about__image {
+    width: 28.9375rem;
+    height: 43.0625rem;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    object-fit: cover;
+
+    @media screen and (max-width: 60.625em) {
+      height: auto;
+      display: none;
+    }
+  }
+}
+
+.about__content {
+  display: flex;
+
+  @media screen and (max-width: 60.625rem) {
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .about__content.whitespace {
+    @media screen and (max-width: 60.625rem) {
+      display: none;
+    }
+  }
+
+  .about__image {
+    width: 50%;
+    height: 24.5rem;
+    padding: 3.25rem 0 0 2.25rem;
+
+    @media screen and (max-width: 60.625rem) {
+      height: auto;
+      width: 100%;
+      padding: unset;
+    }
+
+    &:nth-child(2) {
+      object-fit: cover;
+
+      @media screen and (max-width: 60.625rem) {
+        height: 20rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .about__image-mobile {
+    display: none;
+
+    @media screen and (max-width: 60.625rem) {
+      display: block;
+      height: auto;
+      height: 20rem;
+      object-fit: contain;
+      margin: 3rem auto 2rem;
+    }
+
+    @media screen and (max-width: 34.375em) {
+      margin: 0.5rem auto 0;
+    }
+  }
+
+  .about__paragraphs {
+    width: 50%;
+    padding: 3.25rem 2.25rem 0;
+
+    @media screen and (max-width: 60.625rem) {
+      width: 100%;
+      padding: 0 1.25rem 0;
+    }
+  }
+
+  .about__paragraphs:nth-child(1) > .paragraph:nth-last-child(1) {
+    padding-bottom: 3.25rem;
+  }
+}
+
+.our-story {
+  padding: 3.25rem 2.25rem 3rem;
+}

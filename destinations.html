@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>ReadySetTravel</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo"><a href="index.html" class="underline-hover">ReadySet<span class="logo-travel">Travel</span></a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link underline-hover" aria-label="About">About</a>
+        </li>
+        <li class="nav__item"><a href="destinations.html" class="nav__link underline-hover"
+            aria-label="Destinations">Destinations</a>
+        </li>
+        <li class="nav__item"><a href="tours.html" class="nav__link underline-hover" aria-label="Tours">Tours</a>
+        </li>
+        <li class="nav__item"><a href="blog.html" class="nav__link underline-hover" aria-label="Blog">Blog</a></li>
+        <li class="nav__item">
+          <button class="nav__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="nav">
+        <span class="nav__burger"></span>
+      </button>
+    </nav>
+    <nav class="mobile" id="mobile">
+      <ul class="mobile__list" id="mobile-list">
+        <li class="mobile__item"><a href="about.html" aria-label="About">About</a></li>
+        <li class="mobile__item"><a href="destinations.html" class="mobile__link"
+            aria-label="Destinations">Destinations</a></li>
+        <li class="mobile__item"><a href="tours.html" class="mobile__link" aria-label="Tours">Tours</a></li>
+        <li class="mobile__item"><a href="blog.html" class="mobile__link" aria-label="Blog">Blog</a></li>
+        <li class="mobile__item">
+          <button class="mobile__button" aria-label="Book a Trip">Book a Trip</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="destinations hero">
+      <div class="hero__text container">
+        <h1 class="hero__title">Journey to Dreamsworthy Destinations</h1>
+        <p class="hero__description">Unleash Your Wanderlust!</p>
+      </div>
+    </section>
+
+    <section class="destinations__intro container">
+      <h2 class="destinations__header">"Explore the World: <span class="orange">Unveiling Mesmerizing</span>
+        Destinations for Your Next Adventure"
+      </h2>
+
+      <section class="categories container">
+        <h3 class="categories__header">Categories</h3>
+        <span class="bar"></span>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#beach" />
+            </svg>
+            Beach
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#mountain" />
+            </svg>
+            Mountain
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#city" />
+            </svg>
+            City
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#wildlife" />
+            </svg>
+            Wildlife
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#cultural" />
+            </svg>
+            Cultural
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#island" />
+            </svg>
+            Island
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#family" />
+            </svg>
+            Family-Friendly
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#culinary" />
+            </svg>
+            Culinary
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#adventure" />
+            </svg>
+            Adventure
+          </li>
+          <li class="categories__item">
+            <svg>
+              <use href="img/svg/sprite.svg#luxury" />
+            </svg>
+            Luxury
+          </li>
+        </ul>
+      </section>
+
+
+
+    </section>
+
+    <div class="destinations__cards container">
+      <ul class="card__list" id="destination-cards">
+        <!-- Destination Cards will be dynamically generated here -->
+
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__social">
+        <div class="footer__social logo"><a href="index.html">ReadySet<span class="logo-travel">Travel</span></a>
+        </div>
+        <p class="footer__description">We can provide you with the best advice and tips for your dream trip.</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-facebook.png" alt="Facebook logo"
+                class="footer__social-icon" aria-label="Facebook"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-instagram.png" alt="Instagram logo"
+                class="footer__social-icon" aria-label="Instagram"></a></li>
+          <li class="footer__social-item"><a href="#"><img src="img/social/social-twitter.png" alt="Twitter logo"
+                class="footer__social-icon" aria-label="Twitter"></a></li>
+
+        </ul>
+      </div>
+      <address class="footer__contact">
+        <p class="footer__contact-title">Contact Us</p>
+        <div class="footer__contact-container">
+          <p class="footer__contact__address">1234 Address Street</p>
+          <p class="footer__contact__city-state">City, State 12345</p>
+        </div>
+        <p class="footer__contact__phone">123-456-7890</p>
+      </address>
+      <nav class="footer__links">
+        <p class="footer__links-title">Links</p>
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a href="about.html" class="footer__link">About</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="destinations.html" class="footer__link">Destinations</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="tours.html" class="footer__link">Tours</a>
+          </li>
+          <li class="footer__links-item">
+            <a href="blog.html" class="footer__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/clamp.js"></script>
+  <script type="module" src="js/cards/destinationCards.js"></script>
+</body>
+
+</html>

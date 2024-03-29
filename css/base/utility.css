@@ -1,0 +1,357 @@
+.logo {
+  color: var(--color-black);
+  font-family: var(--font-family-logo);
+  font-size: var(--font-size-secondary);
+  font-style: normal;
+  transition: all 0.25s ease-out;
+
+  .logo-travel {
+    font-weight: var(--font-weight-bold);
+  }
+
+  &:hover {
+    color: var(--color-text-orange);
+  }
+}
+
+button {
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  width: 10rem;
+  height: 3.125rem;
+  background: var(--color-secondary);
+  box-shadow: 0 8px 16px 0 rgba(250, 116, 54, 0.24);
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-text-orange);
+  }
+}
+
+.orange {
+  color: var(--color-text-orange);
+}
+
+.whitespace {
+  display: block;
+  width: 50%;
+}
+
+.paragraph {
+  color: var(--color-text-light-gray);
+  padding-bottom: 1.5rem;
+}
+
+.paragraph--black {
+  color: var(--color-text-black);
+}
+
+.bar {
+  &::after {
+    content: "";
+    display: block;
+    max-width: 100%;
+    height: 0.125rem;
+    background: var(--color-black);
+    opacity: 0.3;
+  }
+}
+
+.hero {
+  background-size: cover;
+  height: 26.5625rem;
+
+  .hero__description {
+    font-size: 1.375rem;
+  }
+}
+
+.search-cta {
+  max-width: 59.625rem;
+  margin-inline: auto;
+  background-color: var(--bg-color-blue);
+  color: var(--color-white);
+  margin: 1.63rem auto 3.56rem;
+  padding: 1.88rem 0;
+
+  @media screen and (max-width: 64.375em) {
+    max-width: 90%;
+  }
+
+  .search-cta__subtitle,
+  .search-cta__search-wrapper {
+    text-align: center;
+  }
+
+  .search-cta__subtitle {
+    color: #fff;
+    margin-bottom: 1.44rem;
+
+    @media screen and (max-width: 64.375em) {
+      width: 90%;
+      margin-inline: auto;
+    }
+  }
+
+  .search-cta__search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 53.125em) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .search-cta__search-input {
+      width: 33.5rem;
+      height: 3.3125rem;
+      padding-left: 2.47rem;
+      border: 0;
+
+      @media screen and (max-width: 53.125em) {
+        padding: unset;
+        text-align: center;
+        width: 90%;
+      }
+    }
+    .search-cta__search-button {
+      width: 10.625rem;
+      height: 3.3125rem;
+
+      @media screen and (max-width: 53.125em) {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem 0;
+  padding-bottom: 3.5rem;
+
+  @media screen and (max-width: 54.6875rem) {
+    padding: 0 2.5rem 3.5rem;
+  }
+}
+
+.card {
+  max-width: 25.75rem;
+  height: 43.375rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 4px 25px 10px rgba(88, 124, 147, 0.25);
+
+  .card__figure {
+    position: relative;
+
+    .card__img {
+      width: 25.75rem;
+      height: 14.3125rem;
+      border-radius: 0.3125rem 0.3125rem 0 0;
+    }
+
+    .card__author {
+      display: flex;
+      position: absolute;
+      left: 0.625rem;
+      top: 0.5625rem;
+      color: var(--color-white);
+
+      .card__author-pic {
+        position: relative;
+
+        .card__author-img {
+          position: absolute;
+          width: 2.25rem;
+          height: 2.187rem;
+          object-fit: contain;
+          border-radius: 50%;
+          border: 3px solid var(--color-white);
+          z-index: 2;
+        }
+
+        .card__author-name {
+          top: 0.1rem;
+          background: #000;
+          padding: 0 0.75rem 0 2rem;
+          margin-left: 1rem;
+          height: 1.5rem;
+          z-index: 1;
+        }
+      }
+    }
+
+    .card__caption {
+      margin: 1.38rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.9375rem;
+    }
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 1.81rem;
+
+    .card__location {
+      max-width: 22rem;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      .card__location-name {
+        display: flex;
+        gap: 0.2rem;
+        text-transform: uppercase;
+        color: var(--color-text-light-gray);
+
+        @media screen and (max-width: 28.75em) {
+          font-size: 0.875rem;
+        }
+      }
+
+      .card__location-icons {
+        display: flex;
+        width: max-content;
+
+        & svg {
+          width: 1.3125rem;
+          height: 1.25rem;
+          margin-left: 0.5rem;
+
+          @media screen and (max-width: 28.75em) {
+            width: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .card__body {
+      height: 20.375rem;
+      margin-bottom: 1rem;
+
+      .card__title {
+        line-height: 1.6875rem;
+
+        & h4 {
+          font-size: 1.189rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .card__description {
+        color: var(--color-text-light-gray);
+        line-height: 1.6875rem;
+      }
+    }
+  }
+}
+
+.card__tour-info {
+  color: #929090;
+  font-size: 0.8125rem;
+}
+
+.card__tour-title {
+  font-size: 1rem;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+.card__read-more {
+  display: flex;
+  gap: 0.23rem;
+  color: var(--color-text-orange);
+
+  & svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .card__link {
+    display: flex;
+    gap: 0.23rem;
+    color: var(--color-text-orange);
+  }
+}
+
+.card__footer-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.38rem 1rem;
+
+  .card__price {
+    font-size: var(--font-size-secondary);
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .card__button {
+    width: 7.47431rem;
+    height: 2.3375rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+.card__footer-social {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+
+  & svg {
+    width: 1.375rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .card__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.12rem;
+
+    &:nth-child(1) {
+      & svg {
+        margin-bottom: 0.1875rem;
+      }
+    }
+  }
+}
+
+.card__footer-read {
+  display: flex;
+  justify-content: space-between;
+
+  .card__date {
+    color: var(--color-text-light-gray);
+  }
+}
+
+.underline-hover {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.underline-hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--color-text-orange);
+  transition: width 0.25s ease-out;
+}
+.underline-hover:hover::before {
+  width: 100%;
+}
